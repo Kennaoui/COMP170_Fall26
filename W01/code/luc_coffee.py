@@ -6,9 +6,9 @@ print("Welcome", customer, "to LUC Coffee!")
 
 print("Your order is:", order)
 
-price = "three"
+price = "3 Dollars"
 
-print("Price:", price, "$")
+print("Price:", price)
 
 total = price * 1.11
 
