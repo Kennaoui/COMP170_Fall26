@@ -1,8 +1,15 @@
 # After-Class Activity 1: Running and Modifying a Python Program
 
-Consider the Python [program](https://github.com/Kennaoui/COMP170_Fall26/tree/main/W01/code) we worked on during class. The version provided for this activity contains a minor modification.
+## Part 1:
 
-## Part 1: Create and Run the Program
+In 3–5 sentences total, answer the following three points:
+1. **Core Takeaway:** In your own words, what was the main concept, rule, or mechanism introduced today?
+2. **Muddiest Point:** What specific step, syntax, logic, or edge case from today is still slightly unclear to you?
+   
+
+Consider in the rest the Python [program](https://github.com/Kennaoui/COMP170_Fall26/tree/main/W01/code) we worked on during class. The version provided for this activity contains a minor modification.
+
+## Part 2: Create and Run the Program
 
 1. Open the terminal.
 2. Use Vim to create a new Python file.
@@ -20,7 +27,7 @@ Then answer the following question:
 
 > What happened when you tried to run the program? Explain the result in your own words. If Python displayed a message, use the information in that message to support your explanation.
 
-## Part 2: Modify the Program
+## Part 3: Modify the Program
 
 Change the code so that it displays a welcoming message and the following order:
 
@@ -36,9 +43,10 @@ Submit the following files to **Activity 1 on Sakai**:
 
 1. **One PDF file** containing:
 
-   - The terminal commands you used.
-   - The complete message or output displayed when you first ran the program.
-   - Your explanation of what happened when you first ran the program.
+   - Answers to Part 1 questions.
+   - The terminal commands you used in Part 2.
+   - The complete message or output displayed when you first ran the program in Part 2.
+   - Your explanation of what happened when you first ran the program in Part 2.
 
 2. **Your modified `.py` file** containing your modified Python code for the new order.
 
