@@ -6,5 +6,5 @@
 
   a. **Core Takeaway:** In your own words, what was the main concept, rule, or mechanism introduced **today**?
   
-  b. **Muddiest Point:** What specific step, syntax, logic, or edge case from **this week** is still slightly unclear to you?
+  b. **Muddiest Point:** What specific step, syntax, logic, or edge case from **today** is still slightly unclear to you?
    
