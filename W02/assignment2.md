@@ -1,41 +1,18 @@
 # COMP 170 — Week 2 Exercises
-### Expressions, Variables, Operators, input() and Errors
----
 
-What to submit: one `.py` file per exercise (five files total, named `exercise1.py` through `exercise5.py`), each runnable on its own. Include your written answers to the Reflection questions as comments at the top of the exercise's file.
+### Expressions, Variables, Operators, `input()`, and Errors
 
 ---
 
-## Exercise 1 — Study Session Snacks
-
-Write a single program that checks whether a study group's snack order is actually a good deal.
-
-**Prompt for:**
-- the price of one snack box
-- how many boxes were ordered
-- how many people are in the group
-- how many snacks come in one box
-- the maximum price per person the group agreed was acceptable
-
-**Calculate and print:**
-1. The total number of snacks ordered.
-2. How many snacks each person gets, and how many are left over, if split evenly.
-3. The total cost of the order.
-4. The cost per person, *per snack* — the total cost divided by the number of people, divided by how many snacks each person got. Match that grouping exactly: adding a parenthesis in the wrong place gives a different number, and Python won't warn you when it happens.
-5. A `True`/`False` value for whether the order is within budget: compare the cost per person (total cost ÷ number of people) directly to `max_price_per_person`. 
-
-**Reflection (short answer):**
-- By hand, work out `2 ** 3 ** 2` and `20 - 5 - 3`. What does that tell you about which direction `**` evaluates in, compared to `-`?
-- Predict what `-7 % 3` evaluates to before you run it. Were you right? What does that tell you about how Python's `%` behaves, compared to how you'd find a remainder by hand?
-- Is the "snacks each person gets" value from step 2 an `int` or a `float`? What would change about it if you'd forgotten to convert `num_people` with `int()`?
+What to submit: Submit five Python files, named `exercise1.py` through `exercise5.py`. Each file must run independently. Include all requested written answers as comments in the corresponding file.
 
 ---
 
-## Exercise 2 — Receipt Header
+## Exercise 1 — Receipt Header
 
-A quick one: write a program that prints **exactly** the following four lines (using one `print()` per line — four total):
+Write a program that prints exactly the following four lines. Use one `print()` statement per line.
 
-```
+```text
 "Fresh Mart" - Thanks for shopping!
 Cashier said: "Have a great day!"
 Today's special: Maria's Bakery Bread
@@ -44,36 +21,45 @@ He whispered, "It's closing time."
 
 ---
 
-## Exercise 3 — Tab Hexagon
+## Exercise 2 — Study Session Snacks
 
-**How `\t` actually works:** a tab does *not* insert a fixed number of spaces. It moves the cursor forward to the next column that's a multiple of 8, counting from the start of the current line (column 0 is where the line begins). So the number of spaces it adds depends entirely on where the cursor already is:
-- Cursor at column 3 → `\t` adds **5** spaces (to reach column 8).
-- Cursor at column 8 (already a multiple of 8) → `\t` still adds a **full 8** spaces, landing on column 16. A tab always moves forward — it never adds zero spaces.
-- General rule: it adds `8 - (column % 8)` spaces — which works out to a full 8 whenever `column` is already a multiple of 8.
+Write a program that checks whether a study group’s snack order is a good deal.
 
-`\n` is simpler: it just starts a new line and resets the column count to 0.
+Prompt the user for:
 
-**Your task:** using **one single `print()` statement** (one string, with `\t` and `\n` characters embedded in it — no other print calls, and no literal space characters anywhere — every bit of horizontal spacing must come from `\t`), display this hexagon outline:
+* the price of one snack box
+* the number of boxes ordered
+* the number of people in the group
+* the number of snacks in each box
+* the maximum acceptable price per person
 
-```
-                *
-        *               *
-*                               *
-*                               *
-        *               *
-                *
-```
+You may assume that all inputs are positive and that there are at least as many snacks as people.
 
-Six rows. Every `*` sits on a multiple of 8 (columns 0, 8, 16, 24, and 32 are all in play), and the shape is symmetric top to bottom.
+Calculate and print:
+
+1. The total number of snacks.
+2. The number of snacks each person receives and the number left over when the snacks are divided evenly.
+3. The total cost of the order.
+4. The effective cost of each distributed snack. First divide the total cost by the number of people, and then divide that result by the number of snacks each person receives. Ignore leftover snacks in this calculation.
+5. A `True` or `False` value indicating whether the order is within budget. Compare the cost per person directly with the maximum acceptable price per person.
+
+### Reflection
+
+Answer these questions as comments in `exercise2.py`:
+
+1. Calculate `2 ** 3 ** 2` and `20 - 5 - 3` by hand, and then check your answers in Python. What do the results show about the direction in which `**` and `-` are evaluated?
+2. Predict the value of `-7 % 3`, and then check it in Python. Were you correct? What did you learn about `%` with negative numbers?
+3. Is the number of snacks each person receives an `int` or a `float`? What error would occur if you forgot to convert the value returned by `input()` for the number of people to an integer?
 
 ---
 
-## Exercise 4 — Find the Bugs
+## Exercise 3 — Find the Bugs
 
-The program below is supposed to compute a coffee order total after a percentage discount. It has exactly **three** mistakes — one of each of these types:
-- a **syntax error** (Python won't even start running the file)
-- a **runtime error** (Python starts running, then crashes partway through)
-- a **logic error** (the program runs to completion and prints something, but the number is wrong)
+The following program is supposed to calculate the total price of a coffee order after applying a percentage discount. It contains exactly three mistakes:
+
+* one syntax error
+* one runtime error
+* one logic error
 
 ```python
 price_per_cup = float(input("Price per cup: "))
@@ -87,20 +73,24 @@ print("Subtotal: $" + str(subtotal)
 print("Total after discount: $" + str(total))
 ```
 
-**Your task:** find all three mistakes. For each one, say which of the three categories it belongs to. Then fix all three so the program produces correct output; For a price of `4.50`, `3` cups, and a `10` percent discount, the corrected program should print:
+Find and fix all three mistakes. For each mistake, add a comment identifying whether it is a syntax, runtime, or logic error.
 
-```
+With a price of `4.50`, `3` cups, and a `10` percent discount, the corrected program should print:
+
+```text
 Subtotal: $13.5
 Total after discount: $12.15
 ```
 
 ---
 
-## Exercise 5 — Discover: Compound Assignment
+## Exercise 4 — Discover Compound Assignment
 
-Three operators we haven't covered in class: `+=`, `-=`, `*=`. Figure out what they do before using them.
+The operators `+=`, `-=`, and `*=` have not yet been covered in class. In this exercise, you will determine what they do and then use them in a program.
 
-**Step 1 — experiment.** In the interpreter (or a scratch file), predict the output of each block *before* you run it, then check:
+### Step 1 — Experiment
+
+Predict the output of each block before running it:
 
 ```python
 x = 5
@@ -116,13 +106,46 @@ z *= 5
 print(z)
 ```
 
-In one sentence each, say what `+=`, `-=`, and `*=` do — and what plain assignment statement each one is shorthand for (e.g., `x += 3` is shorthand for `x = ____`).
+As comments in `exercise4.py`, explain in one sentence what each operator does. Also give the ordinary assignment statement for which it is shorthand. For example:
 
-**Step 2 — apply it.** Now use what you just figured out to track a trivia team's score through three rounds — one compound assignment operator per round, no plain `score = score ...` allowed:
+```python
+x += 3  # Shorthand for x = = ______
+```
 
-- Start `score` at `0`.
-- Round 1: the team answers a bonus question worth 10 points.
-- Round 2: an incorrect buzz-in costs them 4 points.
-- Round 3: a wager round doubles whatever the score currently is.
+### Step 2 — Apply
 
-Print the score after each round, clearly labeled.
+Use compound assignment to track a trivia team’s score:
+
+* Start the score at `0`.
+* Round 1: add 10 points.
+* Round 2: subtract 4 points.
+* Round 3: double the current score.
+
+Use one compound assignment operator in each round. Do not use statements such as `score = score + 10`.
+
+Print the score after each round with a clear label.
+
+---
+
+## Exercise 5 — Tab Hexagon
+
+For this exercise, assume that tab stops occur every eight columns. A tab character, `\t`, moves the cursor to the next tab stop. A newline character, `\n`, begins a new line.
+
+For example:
+
+* From column 3, `\t` moves to column 8.
+* From column 8, `\t` moves to column 16.
+* In general, a tab adds `8 - (column % 8)` spaces.
+
+Using one `print()` statement and one string containing `\t` and `\n`, display this hexagon:
+
+```text
+                *
+        *               *
+*                               *
+*                               *
+        *               *
+                *
+```
+
+Do not include literal space characters inside the string. All horizontal spacing must be created using `\t`.
