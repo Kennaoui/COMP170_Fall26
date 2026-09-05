@@ -1,7 +1,9 @@
 # COMP 170 — Week 2 Exercises
 ### Expressions, Variables, Operators, input() and Errors
 ---
+
 What to submit: one `.py` file per exercise (five files total, named `exercise1.py` through `exercise5.py`), each runnable on its own. Include your written answers to the Reflection questions as comments at the top of the exercise's file.
+
 ---
 
 ## Exercise 1 — Study Session Snacks
