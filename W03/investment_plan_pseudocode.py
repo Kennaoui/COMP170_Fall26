@@ -28,13 +28,13 @@
 # display_plan_plan displays the plan information and calculated value.
 # show_plan coordinates the previous three functions.
 
-def read_plan() -> tuple[str, float, float, int]: # We will discuss what tuples are later this semester
+def read_plan(): 
     """
     Ask the user for the plan name.
-    Ask the user for the starting amount.
-    Ask the user for the annual interest rate.
-    Ask the user for the number of years.
-    Return all the entered information.
+    Ask the user for the starting amount and convert to an float.
+    Ask the user for the annual interest rate and convert to a float.
+    Ask the user for the number of years and convert to an integer.
+    Return all the entered information in the above order.
     """
     name = input("Plan name: ")
     principal = float(input("Starting amount: "))
