@@ -1,19 +1,30 @@
-def calculate_future_value(principal, rate, years):
-    value = principal * (1 + rate) ** years
-    return value
-    
-def display_plan(plan_name, principal, rate, years, value):
-    print("PLAN:", plan_name)
+def read_plan():
+    name = input("Plan name: ")
+    principal = float(input("Starting amount: "))
+    rate = float(input("Annual rate as a decimal: "))
+    years = int(input("Number of years: "))
+    return name, principal, rate, years
+
+
+def calculate_future_value(principal, rate = 0.5, years = 5):
+    return principal * (1 + rate) ** years
+
+
+def display_plan(name, principal, rate, years, future_value):
+    print("PLAN:", name)
     print("Deposit:", principal, "Rate:", rate, "Years:", years)
-    print("Future value:", round(value, 2))
+    print("Future value:", round(future_value, 2))
 
-
-value1 = calculate_future_value(1000, 0.03, 5)
-display_plan("Starter", 1000, 0.03, 5, value1)
-
-value2 = calculate_future_value(1500, 0.04, 8)
-display_plan("Growth", 1500, 0.04, 8, value2)
-
-value3 = calculate_future_value( 2000, 0.05, 10)
-display_plan("Long-Term", 2000, 0.05, 10, value3)
-     
+def show_plan():
+    name, principal, rate, years = read_plan()
+    value = calculate_future_value(principal, rate, years)
+    display_plan(name, principal, rate, years, value)
+    
+def main(): 
+    #Test 1
+    show_plan()
+    #Test 2 (with default values)
+    print(calculate_future_value(1000))
+    print(calculate_future_value(1000, 0.5))
+    print(calculate_future_value(1000, years = 10))
+main()
