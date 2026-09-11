@@ -31,7 +31,7 @@
 def read_plan(): 
     """
     Ask the user for the plan name.
-    Ask the user for the starting amount and convert to an float.
+    Ask the user for the starting amount and convert to an float. 
     Ask the user for the annual interest rate and convert to a float.
     Ask the user for the number of years and convert to an integer.
     Return all the entered information in the above order.
