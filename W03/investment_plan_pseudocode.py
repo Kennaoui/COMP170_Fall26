@@ -31,10 +31,13 @@
 def read_plan(): 
     """
     Ask the user for the plan name.
-    Ask the user for the starting amount and convert to an float. 
-    Ask the user for the annual interest rate and convert to a float.
-    Ask the user for the number of years and convert to an integer.
-    Return all the entered information in the above order.
+    Ask the user for the starting amount, then convert to float. 
+    Assumes but does not validate that the amount is a positive number.
+    Ask the user for the annual interest rate, then convert to float.
+    Assumes but does not validate rate is entered as a decimal, not a percentage
+    Ask the user for the number of years, then convert to inetegr.
+    Assumes but does not validate that years is a positive whole number
+    Return all the entered information.
     """
     name = input("Plan name: ")
     principal = float(input("Starting amount: "))
@@ -46,7 +49,7 @@ def read_plan():
 def calculate_future_value( principal: float, rate: float = 0.5, years: int = 5) -> float:
     """
     Calculate the future value of the invested principal.
-    Takes as input the principal , rate (default 0.5), and years (default 5).
+    Take as input the principal , rate (default 0.5), and years (default 5).
     Return the calculated value.
     """
     return principal * (1 + rate) ** years
