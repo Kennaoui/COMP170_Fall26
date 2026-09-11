@@ -1,13 +1,23 @@
-# Name: xxxx
-
-# Investment PLan Calculator
-# This program collects information about an investment plan, 
+# COMP 170 Standard Python Header
+# Assignment: Investment Plan
+# Name and Loyola Id/email: xxxxxxx
+# Date: September 11, 2026
+#
+# Description: This program collects information about an investment plan,
 # calculates its future value, and displays the results.
-# 1. Read the information for an investment plan.
-# 2. Calculate the future value of the investment.
-# 3. Display the plan and its future value.
-# 4. Test the calculation using default argument values.
-
+#
+# Questions: None
+#
+# Problem Analysis and Key Issues:
+# The program needs to collect information about an investment plan,
+# calculate its future value, and display the complete plan.
+#
+# Functions:
+# read_plan_plan collects the investment information from the user.
+# calculate_future_future_value calculates the value of the investment.
+# display_plan_plan displays the plan information and calculated value.
+# show_plan coordinates the previous three functions.
+# main tests the previous functions
 
 def read_plan() -> tuple[str, float, float, int]: # We will discuss what tuples are later this semester
     """
@@ -24,7 +34,6 @@ def read_plan() -> tuple[str, float, float, int]: # We will discuss what tuples 
 
     return name, principal, rate, years
 
-
 def calculate_future_value( principal: float, rate: float = 0.5, years: int = 5) -> float:
     """
     Calculate the future value of the invested principal.
@@ -32,7 +41,6 @@ def calculate_future_value( principal: float, rate: float = 0.5, years: int = 5)
     Return the calculated value.
     """
     return principal * (1 + rate) ** years
-
 
 def display_plan(
     name: str,
@@ -50,7 +58,6 @@ def display_plan(
     print("Deposit:", principal, "Rate:", rate, "Years:", years)
     print("Future value:", round(future_value, 2))
 
-
 def show_plan() -> None:
     """
     Prompts the user for information for one investment plan by calling read_plan()
@@ -61,7 +68,6 @@ def show_plan() -> None:
     value = calculate_future_value(principal, rate, years)
     display_plan(name, principal, rate, years, value)
 
-
 def main():
     # Test 1: values entered by the user
     show_plan()
@@ -70,6 +76,5 @@ def main():
     print(calculate_future_value(1000))
     print(calculate_future_value(1000, 0.5))
     print(calculate_future_value(1000, years=10))
-
 
 main()
