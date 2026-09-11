@@ -30,13 +30,7 @@ A function isn't well decomposed just because it has a name. The real test:
 
 > Can you describe its job in one sentence, without joining two unrelated actions with "and"?
 
-"Reads the input *and* calculates *and* prints it" is three jobs wearing one name. These are separate concerns and belong in separate functions:
-
-- **Reading input** - getting information from the user, a file, or an argument
-- **Calculating** - pure logic, no `print()` or `input()` inside it
-- **Displaying output** - formatting and showing a result, inventing nothing
-
-Keeping these apart is what makes a function reusable: a calculation that only calculates can be tested or reused anywhere, while one tangled up with input/output is stuck serving only its original spot.
+"Reads the input *and* calculates *and* prints it" is three jobs wearing one name. These are separate concerns and belong in separate functions. Keeping these apart is what makes a function reusable: a calculation that only calculates can be tested or reused anywhere, while one tangled up with input/output is stuck serving only its original spot.
 
 Watch both extremes:
 
@@ -52,10 +46,6 @@ These deductions apply to any COMP 170 programming assignment that includes a ps
 | Category | Deduction | What it covers |
 |---|---|---|
 | **Decomposition into functions** | up to 25% | No meaningful breakup of the problem into functions, or it's unclear what functions are planned. |
-| **Redundancy** | 10% to 25% | Code or pseudocode repeated in more than one place in exactly or nearly the same form. |
-| **Problem analysis** | 5% to 25% | Incomplete analysis of the problem, depending on severity. Restating the prompt is not analysis - analysis means identifying what's genuinely hard about the problem and sketching an approach. A submission with no real analysis at all falls at the top of this range. |
-| **Pseudocode format** | 50% | Code only, with no pseudocode at all. Independent of the categories above - graded regardless of code quality, since the point is the thinking-before-programming process. Writing the code first and converting it to pseudocode afterward counts the same as submitting none. |
-
-These categories are independent, not steps on one sliding scale, so a submission can lose points in more than one at once. A score never goes below 0 regardless of how many categories are triggered.
-
-Grade somewhat strictly, particularly early in the semester - it's worth reinforcing good pseudocode habits before they calcify into bad ones. Students are encouraged to discuss their grade if they disagree with it; that conversation is itself a useful moment of critical reflection, for them and for the grader.
+| **Redundancy** | 10% to 20% | Code or pseudocode repeated in more than one place in exactly or nearly the same form. |
+| **Problem analysis** | 5% to 20% | Incomplete analysis of the problem, depending on severity. Restating the prompt is not analysis - analysis means identifying what's genuinely hard about the problem and sketching an approach. A submission with no real analysis at all falls at the top of this range. |
+| **Pseudocode format** | 30% | Code only, with no pseudocode at all. |
