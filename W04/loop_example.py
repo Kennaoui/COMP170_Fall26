@@ -31,27 +31,4 @@ def example3():
     print("+----+") # this is printed after the for loop 
 
 
-def display():
-    line = "+" + '/\\' * 4 + '+'
-    print(line)
-    for _ in range(2):
-        print('|' + ' '* 8 + '|')
-    print(line)
-
-def display_bigger():
-    line = "+" + '/\\' * 10 + '+'
-    print(line)
-    for _ in range(5):
-        print('|' + ' '* 20 + '|')
-    print(line)
-
-def complex_display_top():
-    line = '#' + '=' * 16 + '#'
-    print(line)
-    for i in range(1, 5):
-        print('|'+(-2*i+8)*' '+'<>'+'.'*(4*i-4)+ '<>'+(-2*i+8)*' '+'|')
-    #Add the loop for the bottom half
-    print(line)
-    
-
-complex_display_top()
+example3()
