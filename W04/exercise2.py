@@ -1,0 +1,11 @@
+#Solution for exercise 2 from Slides (done in class)
+def complex_display_top():
+    line = '#' + '=' * 16 + '#'
+    print(line)
+    for i in range(1, 5):
+        print('|'+(-2*i+8)*' '+'<>'+'.'*(4*i-4)+ '<>'+(-2*i+8)*' '+'|')
+    #Add the loop for the bottom half
+    print(line)
+    
+
+complex_display_top()
