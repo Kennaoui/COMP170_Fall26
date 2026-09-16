@@ -13,4 +13,43 @@ def example2():
         print(i, end=', ')
     print("blastof!\nThe end.")
 
-example2()
+def example3():
+    """print this shape: 
+    +----+
+    \\    /
+    /    \\
+    \\    /
+    /    \\
+    \\    /
+    /    \\
+    +----+ 
+    """ 
+    print("+----+") # this is printed before the for loop
+    for i in range(3): # Or range(1,4)
+        print("\\    /")
+        print("/    \\")
+    print("+----+") # this is printed after the for loop 
+
+
+def display():
+    line = "+" + '/\\' * 4 + '+'
+    print(line)
+    for _ in range(2):
+        print('|' + ' '* 8 + '|')
+    print(line)
+
+def display_bigger():
+    line = "+" + '/\\' * 10 + '+'
+    print(line)
+    for _ in range(5):
+        print('|' + ' '* 20 + '|')
+    print(line)
+
+def complex_display_top():
+    top = '#' + '=' * 16 + '#'
+    print(top)
+    for line in range(1, 5):
+        print('|'+(-2*line+8)*' '+'<>'+'.'*(4*line-4)+ '<>'+(-2*line+8)*' '+'|')
+    
+
+complex_display_top()
