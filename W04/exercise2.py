@@ -1,4 +1,11 @@
 #Solution for exercise 2 from Slides (done in class)
+
+#Pseudocode: 
+#Print header line
+#Loop to print the top half
+#Loop to print the bottom half
+#Print header line again
+
 def complex_display_top():
     line = '#' + '=' * 16 + '#'
     print(line)
