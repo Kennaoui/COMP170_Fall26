@@ -18,7 +18,7 @@ Use only concepts covered during Weeks 1–4. In particular:
 - Do **not** use `if` statements, `while` loops, `break`, or `continue`.
 - Do not use lists or other collections to store all the values entered by the user. Process each value as it is entered.
 
-## Exercise 1 — Dinner Receipt
+## Exercise 1 — Dinner Receipt (3 pts)
 
 Create a file named `dinner_receipt.py`.
 
@@ -54,11 +54,11 @@ Structure the program using the following three functions:
 2. `display_receipt()` — receives the subtotal, calculates the tax, tip, and total, and displays the completed receipt.
 3. `main()` — prompts for the number of people and coordinates the program by calling the other functions.
 
-## Exercise 2 — Framed Hourglass
+## Exercise 2 — Framed Hourglass (4 pts)
 
 Create a file named `framed_hourglass.py`.
 
-### Part 1 — Fixed-Size Hourglass
+### Part 1 — Fixed-Size Hourglass (1.5 pts)
 
 First, write a function that displays the following hourglass of size `4` exactly as shown. Use loops to produce the changing spaces and stars. Do not use a separate `print()` statement for every line.
 
@@ -75,7 +75,7 @@ First, write a function that displays the following hourglass of size `4` exactl
 +---------+
 ```
 
-### Part 2 — Resizable Hourglass
+### Part 2 — Resizable Hourglass (2.5 pts)
 
 Next, generalize the program so that it prompts the user for a size and displays an hourglass following the same pattern.
 
@@ -115,7 +115,7 @@ Decompose the resizable solution into the following functions:
 
 The fixed-size and resizable versions must both appear in your submitted file. Add a brief comment identifying each part.
 
-## Exercise 3 — Number Triangle
+## Exercise 3 — Number Triangle (3 pts)
 
 Create a file named `number_triangle.py`.
 
