@@ -145,7 +145,7 @@ For a size of `7`, it should display:
 
 Write a program that prompts the user for the size and displays the corresponding number triangle. Your solution must use nested loops and must work for sizes other than the two examples above.
 
-Generate the needed sequence directly through `range()`; do not use a separate variable to update it manually. *(Hint: step ≠ 1.)*
+Generate the needed sequence directly through `range()` with *step = 2*.
 
 Do not write a separate `print()` statement for each row or hard-code the displayed values. Part of the exercise is determining how to calculate each value from its row and its position in the triangle. Explain the rule you identified in your pseudocode.
 
