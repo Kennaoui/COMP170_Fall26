@@ -10,6 +10,7 @@ def get_bmr_input():
     weight = float(input("Enter your weight in kilograms: "))
     height = float(input("Enter your height in centimeters: "))
     age = int(input("Enter your age in years: "))
-    gender = input("Enter your gender (male/female): ").strip().lower()
+    #gender = input("Enter your gender (male/female): ").strip().lower()
+    gender = int(input("Enter  0 if male, 1 if female: "))
     
     return weight, height, age, gender
