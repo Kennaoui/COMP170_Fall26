@@ -35,6 +35,13 @@ def calculate_bmr(weight: float, height: floatt, age: int, gender: int) -> float
         print("Invalid gender input!")
 
 def display_user_bmr(user, bmr): 
+    """
+    To do:
+    print a message similar to: 
+        Person #2 basal metabolic rate = 1868.4
+        moderate resting burn rate 
+    The burn level should be determined using the table on slide 14.
+    """
     pass
 
 def main(): 
