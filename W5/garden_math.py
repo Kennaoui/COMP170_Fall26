@@ -1,4 +1,4 @@
-from math import sqrt
+from math import sqrt, ceil
 
 def side_length(area: float) -> float:
     """Return the side length of a square with the given area."""
@@ -7,5 +7,6 @@ def side_length(area: float) -> float:
 
 def whole_side_length(area: float) -> int:
     """Return the biggest whole-number side length that is large enough."""
-    # TODO: Use functions from the math module.
-    pass
+    return ceil(side_length(area))
+
+whole_side_length(20)
