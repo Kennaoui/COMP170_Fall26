@@ -9,4 +9,4 @@ def whole_side_length(area: float) -> int:
     """Return the biggest whole-number side length that is large enough."""
     return ceil(side_length(area))
 
-whole_side_length(20)
+print(whole_side_length(20))
