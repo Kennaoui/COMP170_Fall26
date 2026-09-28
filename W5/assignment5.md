@@ -12,13 +12,11 @@ In `main()`, ask for the visitor's age and whether they have a student ID, then 
 
 ## Exercise 2 — Distance to a destination
 
-Create `trip_distance.py`. Import the `math` module and use functions from it to calculate the straight-line distance between two points:
+Create `trip_distance.py`. Import the `math` module and use functions from it to calculate the straight-line distance between two points (x_1, y_1) and (x_2, y_2):
 
-\[
-d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}
-\]
+distance = square root of ((x_2 - x_1)² + (y_2 - y_1)²)
 
-Write `distance(x1: float, y1: float, x2: float, y2: float) -> float` to return the distance. In `main()`, ask for the coordinates of both points, print the distance rounded to two decimal places, and report whether the destination is **nearby** (distance at most 5) or **farther away** (distance greater than 5). Test a distance below 5, exactly 5, and above 5.
+Write `distance(x_1: float, y_1: float, x_2: float, y_2: float) -> float` to return the distance. In `main()`, ask for the coordinates of both points, print the distance rounded to two decimal places, and report whether the destination is **nearby** (distance at most 5) or **farther away** (distance greater than 5). Test a distance below 5, exactly 5, and above 5.
 
 ## Exercise 3 — Update a reading list
 
