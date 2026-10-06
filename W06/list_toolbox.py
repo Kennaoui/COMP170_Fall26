@@ -9,6 +9,10 @@ def list_max(values: list[int]) -> int:
     # TODO: Find and return the largest number.
     pass
 
+def list_min_index(values: list[int]) -> int:
+    """Return the index of the smallest number in values."""
+    # TODO: Find and return the index of the smallest number.
+    pass
 
 def count_above(values: list[int], limit: float) -> int:
     """Return how many numbers in values are > limit."""
