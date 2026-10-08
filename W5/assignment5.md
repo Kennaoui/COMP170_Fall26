@@ -1,6 +1,6 @@
 # COMP 170 — Assignment: Conditions, Modules, and Lists
 
-Create one Python file for each exercise. Place pseudocode in comments at the top of each file. Every function must have type annotations, a docstring, and one focused job. Use a `main()` function to coordinate each program and call it at the end of the file. Follow the Programmer's Pact.
+Create one Python file for each exercise. Place pseudocode in comments at the top of each file. Every function must have type annotations, a docstring, and one focused job. Use a `main()` function to coordinate each program and call it at the end of the file.
 
 ## Exercise 1 — Museum admission
 
