@@ -1,6 +1,6 @@
 # COMP 170 — Assignment: Lists and Strings
 
-Complete Exercises **3, 4, 5, 6, and 8** from the [Lists and Strings Practice file](https://github.com/Kennaoui/COMP170_Fall26/blob/main/W8/Lists_Strings_Practice.pdf). Place pseudocode in comments at the top of each file. Every function must have type annotations, a docstring, and one focused job. Include comments where necessary to explain your code. Use a `main()` function to coordinate each program and call it under `if __name__ == "__main__":`.
+Complete Exercises **3, 4, 5, 6, and 8** from the [Lists and Strings Practice file](https://github.com/Kennaoui/COMP170_Fall26/blob/main/W8/Lists_Strings_Practice.pdf). Every function must have type annotations, a docstring, and one focused job. Include comments inside functions if/when/where necessary to explain your code. Use a `main()` function to coordinate each program and call it under `if __name__ == "__main__":`.
 
 ## Exercises 3–6 — Quick exercises
 
