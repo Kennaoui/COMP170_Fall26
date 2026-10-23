@@ -6,9 +6,9 @@ Complete Exercises **3, 4, 5, 6, and 8** from the [Lists and Strings Practice fi
 
 Create `quick_exercises.py`. Complete Exercises **3, 4, 5, and 6** from the practice file, following the instructions for each exercise. Clearly label each exercise in your file using comments.
 
-## Exercise 8 — Caesar cipher
+## Exercise 9 — Caesar cipher
 
-Create `caesar_cipher.py`. Complete **Exercise 8** from the practice file, following its instructions.
+Create `caesar_cipher.py`. Complete **Exercise 9** from the practice file, following its instructions.
 
 ## Submission
 
