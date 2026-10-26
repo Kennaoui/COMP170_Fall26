@@ -27,14 +27,18 @@ class BankAccount:
         return False
     
     def withdraw(self, amount: float) -> bool:
-        """Remove amount if the balance covers it and return True. 
+        """Remove amount if the balance covers it and return true. 
         Otherwise, return false."""
         if not self.can_afford(amount):
             #raise ValueError("amount not covered by balance!")
             return False
         self.balance -= amout
         return True
-    
+
+    def transfer(self, other: "BankAccount", amount: float) -> None: 
+        """Move amount from this account into other."""
+        pass
+        
 
 
 
