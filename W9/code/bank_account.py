@@ -5,6 +5,7 @@ class BankAccount:
         """Create an account for 'name' as owner ad with a starting balance."""
         self.owner = name
         self.balance = balance
+        self.history = []
     
     def deposit(self, amount: float) -> None:
         """Add amount to this account's balance."""
@@ -37,7 +38,20 @@ class BankAccount:
 
     def transfer(self, other: "BankAccount", amount: float) -> None: 
         """Move amount from this account into other."""
-        pass
+        self.balance -= amount
+        # or: self.withdraw(amount)
+        other.balance += amount
+        # or : other.deposit(amount)
+    
+    def __str__(self) -> str:
+        
+        return self.owner + ": $" + str(self.balance)
+    
+    def __eq__(self, other: "BankAccount") -> bool :
+
+        return self.owner == other.owner
+
+        
         
 
 

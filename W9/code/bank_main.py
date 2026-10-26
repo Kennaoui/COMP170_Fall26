@@ -6,16 +6,13 @@ def main() -> None:
     """Open two accounts and show them."""
 
     ada = BankAccount("Ada", 100.0)
-    bo = BankAccount("Bo")
+   
   
-    print(ada.owner, ada.balance)
-    print(bo.owner, bo.balance)
-
-    bo.deposit(50.0)
-    print(bo.get_balance())
-
-    if ada.can_afford(150):
-        print("you can afford!")
+    ada.deposit(50.0)
+    ada.withdraw(20)
+    print(ada)
+    print(bo)
+    print(ada == bo)
     
 
 
