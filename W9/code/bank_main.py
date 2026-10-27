@@ -5,7 +5,7 @@ from bank_account import *
 def main() -> None:
     """Open two accounts and show them."""
 
-    ada = BankAccount("Ada", 100.0)
+    ada: BankAccount = BankAccount("Ada", 100.0)
    
   
     ada.deposit(50.0)
