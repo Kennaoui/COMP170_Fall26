@@ -54,7 +54,7 @@ remove_failing_scores(scores)
 print(scores)  # [8, 9]
 ```
 
-**Constraints:** Do not use list comprehensions, `filter()`, or create a replacement list.
+**Constraints:** Do not use `filter()` or create a replacement list.
 
 ### Before coding
 
