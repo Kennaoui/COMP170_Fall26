@@ -36,7 +36,8 @@ def draw_fence(n:int) -> None: ​
 
 
 
-#### in class activity solution ##############
+#In class activity solution
+
 def valid_score(score: str) -> bool:
     try:
         number = int(score)
