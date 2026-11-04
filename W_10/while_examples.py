@@ -6,7 +6,6 @@ def years_to_reach(balance: float, goal: float, rate: float) -> int:​
        years = years + 1​  
     return years​
 
-
 def count_characters() -> int:​
     """Return total characters typed before quit."""​
     total = 0                       # 1 before the loop​
@@ -15,7 +14,6 @@ def count_characters() -> int:​
       total = total + len(entry)  # 4 process​
       entry = input("Text: ")     # 5 read next​
     return total                    # 6 after the loop​
-
 
 def total_purchases() -> float:​
     """Read amounts until -1; return their total."""​
@@ -26,7 +24,6 @@ def total_purchases() -> float:​
        amount = float(input("Amount (-1 to finish): "))​
     return total
 
-
 def draw_fence(n:int) -> None: ​
      """ draw a fence with n sections and n + 1 posts, such as |=|=|=| for n=3"""​
      print("|", end="")  # First post ​
@@ -35,8 +32,6 @@ def draw_fence(n:int) -> None: ​
      print()  # Move to a new line​
 
 
-
-#In class activity solution
 
 def valid_score(score: str) -> bool:
     try:
