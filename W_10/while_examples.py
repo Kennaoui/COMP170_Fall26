@@ -30,22 +30,4 @@ def draw_fence(n:int) -> None: ​
      for i in range(n): ​
          print("=|", end="")  # One section and its next post ​
      print()  # Move to a new line​
-
-
-
-def valid_score(score: str) -> bool:
-    try:
-        number = int(score)
-        return 0 <= number <= 10
-    except ValueError:
-        return False
-
-
-def get_quiz_score() -> int:
-    score = input("Enter a quiz score (0-10): ")
-
-    while not valid_score(score):
-        print("Invalid score. Try again.")
-        score = input("Enter a quiz score (0-10): ")
-
-    return int(score)​
+​
