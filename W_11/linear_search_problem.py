@@ -1,4 +1,22 @@
-def first_passing_score_for(scores: list[int]) -> int:
+def first_passing_score_for_V1(scores: list[int]) -> int:
+    """Return the first passing index; for loop visits every element."""
+    first_index = -1
+    for i in range(len(scores)):
+        if scores[i] >= 7 and first_index == -1:
+            first_index = i
+    return first_index
+
+def first_passing_score_for_V2(scores: list[int]) -> int:
+    """Return the first passing index; for loop visits every element."""
+    first_index = -1
+    for i in range(len(scores)):
+        if scores[i] >= 7:
+            first_index = i
+            break
+    return first_index
+
+
+def first_passing_score_for_V3(scores: list[int]) -> int:
     """Return the first passing index; for loop visits every element."""
     no_p_score = -1
     for i in range(len(scores)):
@@ -9,11 +27,11 @@ def first_passing_score_for(scores: list[int]) -> int:
 
 def first_passing_score(scores: list[int]) -> int:
     """Return the index of the first score >= 7, or -1 if absent."""
-    first_p_score = -1
+    first_index = -1
     i = 0
     while i < len(scores) and first_p_score == -1:
         if score[i] >= 7:
-           first_p_score = i
+           first_index = i
         i += 1
         
-    return first_p_score
+    return first_index
