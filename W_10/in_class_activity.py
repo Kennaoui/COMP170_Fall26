@@ -3,11 +3,11 @@
 # This loop never terminates.
 
 def get_quiz_score_v1() -> int:
-    score = input("Enter a score (0-10): ")
+    score = int(input("Enter a score (0-10): "))
 
-    while type(score) != int:
+    while type(score) != int or int(score) < 0 or int(score) > 10:
         print("Invalid score. Try again.")
-        score = input("Enter a score (0-10): ")
+        score = int(input("Enter a score (0-10): "))
 
     return score
 
