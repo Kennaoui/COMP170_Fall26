@@ -10,9 +10,9 @@ In this assignment you write a `Point` class, use it from a separate program, an
 - Keep the class in `point.py` and your program in `house.py`, in the same folder. The program uses `main()` and calls it under `if __name__ == "__main__":`.
 - Submit `point.py` and `house.py`.
 
-## Part A — The Point class
+## Part A — The Point class (7 pts)
 
-### 1. Write the Point class
+### 1. Write the Point class (4 pts)
 
 A `Point` object represents a location (x, y) in the plane. Create `point.py` and start it with this code:
 
@@ -33,33 +33,33 @@ class Point:
 
 Add the following methods to `Point`.
 
-a) `get_x(self) -> float` and `get_y(self) -> float`: Return the x- and y-coordinates.
+a) `get_x(self) -> float` and `get_y(self) -> float`: Return the x- and y-coordinates. (0.5 pt)
 
-b) `set_x(self, x: float) -> None` and `set_y(self, y: float) -> None`: Replace the x- or y-coordinate with a new value.
+b) `set_x(self, x: float) -> None` and `set_y(self, y: float) -> None`: Replace the x- or y-coordinate with a new value. (0.5 pt)
 
-c) `translate(self, dx: float, dy: float) -> None`: Move the point `dx` units horizontally and `dy` units vertically. A positive `dx` moves the point right and a negative `dx` moves it left; a positive `dy` moves it up and a negative `dy` moves it down. So the new coordinates are x + dx and y + dy. For example, translating (3, 4) by `dx = -5` and `dy = 10` moves it to (-2, 14).
+c) `translate(self, dx: float, dy: float) -> None`: Move the point `dx` units horizontally and `dy` units vertically. A positive `dx` moves the point right and a negative `dx` moves it left; a positive `dy` moves it up and a negative `dy` moves it down. So the new coordinates are x + dx and y + dy. For example, translating (3, 4) by `dx = -5` and `dy = 10` moves it to (-2, 14). (1 pt)
 
 d) `distance(self, other: "Point") -> float`: Return the straight-line distance between this point and `other`:
 
    d = √((x₂ − x₁)² + (y₂ − y₁)²)
 
-   Use `math.sqrt`. For example, the distance from (-2, 1) to (4, 9) is `10.0`. (The quotes in `"Point"` let a method of `Point` use its own class as a type.)
+   Use `math.sqrt`. For example, the distance from (-2, 1) to (4, 9) is `10.0`. (The quotes in `"Point"` let a method of `Point` use its own class as a type.) (1 pt)
 
-e) `__str__(self) -> str`: Return text such as `(-200, -100)`.
+e) `__str__(self) -> str`: Return text such as `(-200, -100)`. (1 pt)
 
-### 2. Four corners of a square
+### 2. Four corners of a square (3 pts)
 
 Create `house.py` in the same folder and import your class with `from point import *`. In `main()`:
 
-a) Create four `Point` objects named `bottom_left`, `bottom_right`, `top_right`, and `top_left` that are the corners of a square with sides of length 100. The bottom-left corner is at x = -200, y = -100; work out the other three.
+a) Create four `Point` objects named `bottom_left`, `bottom_right`, `top_right`, and `top_left` that are the corners of a square with sides of length 100. The bottom-left corner is at x = -200, y = -100; work out the other three. (1 pt)
 
-b) Print the four points.
+b) Print the four points.(0.5 pt)
 
-c) Use `distance` to print the length of one side and of one diagonal (rounded to two decimals), and check that they are what you expect for a square.
+c) Use `distance` to print the length of one side and of one diagonal (rounded to two decimals), and check that they are what you expect for a square. (0.5 pt)
 
-d) Test the rest of your class: print one point's coordinates with `get_x` and `get_y`, and try `translate`, `set_x`, and `set_y` on an extra point of your own.
+d) Test the rest of your class: print one point's coordinates with `get_x` and `get_y`, and try `translate`, `set_x`, and `set_y` on an extra point of your own. (1 pt)
 
-## Part B — Drawing houses
+## Part B — Drawing houses (3 pts)
 
 **Drawing with turtle.** The `turtle` module comes with Python, so there is nothing to install. It draws in a window whose center is (0, 0), with x increasing to the right and y increasing upward, just like your points. Think of a pen that you lift and lower. You only need these commands:
 
@@ -77,17 +77,17 @@ turtle.done()          # keep the window open until you close it
 
 A `goto` needs two numbers, so give it a point's coordinates: `pen.goto(p.get_x(), p.get_y())`. Do not name any file `turtle.py`, because Python would import your file instead of the module.
 
-### 3. Draw one house
+### 3. Draw one house (2 pts)
 
 The square from Exercise 2 is the bottom of the house, and a triangular roof sits on top of it.
 
-a) In `house.py`, write a function `draw_line(pen: turtle.Turtle, start: Point, end: Point) -> None` that draws a line segment between two points. Lift the pen, go to `start`, lower the pen, then go to `end`.
+a) In `house.py`, write a function `draw_line(pen: turtle.Turtle, start: Point, end: Point) -> None` that draws a line segment between two points. Lift the pen, go to `start`, lower the pen, then go to `end`. (1 pt)
 
-b) Write a function `draw_house(pen, bottom_left, bottom_right, top_right, top_left, peak) -> None` (with type annotations) that uses `draw_line` six times: four times for the sides of the square, and twice for the roof, from `top_left` to `peak` and from `peak` to `top_right`.
+b) Write a function `draw_house(pen, bottom_left, bottom_right, top_right, top_left, peak) -> None` (with type annotations) that uses `draw_line` six times: four times for the sides of the square, and twice for the roof, from `top_left` to `peak` and from `peak` to `top_right`. (1 pt)
 
-c) In `main()`, create the roof's `peak` at (-150, 60), halfway across the square and 60 above its top. Create a pen, call `draw_house` with your five points, and end with `turtle.done()`.
+c) In `main()`, create the roof's `peak` at (-150, 60), halfway across the square and 60 above its top. Create a pen, call `draw_house` with your five points, and end with `turtle.done()`. (1 pt)
 
-### 4. Three houses in a row
+### 4. Three houses in a row (1 pt)
 
 Change `main()` so that it draws three identical houses side by side, 150 units apart, as in the picture below. Do not create new points for the second and third houses.
 
