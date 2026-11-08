@@ -35,13 +35,6 @@ print(numbers)  # [50, 40, 30, 20, 10]
 
 **Constraints:** Do not use `reverse()`, `reversed()`, or slicing (`[::-1]`).
 
-### Before coding
-
-- Two approaches: create a new copy or do it in-place.
-- Which two positions should be exchanged first?
-- After one swap, which positions should be exchanged next?
-- When should the loop stop? What happens for a list with an odd number of elements?
-- Why does the function return `None` rather than a new list?
 
 
 ## Problem 3: Remove Failing Scores While Traversing
