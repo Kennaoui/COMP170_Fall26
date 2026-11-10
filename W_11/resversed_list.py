@@ -9,6 +9,7 @@ def reverse_out_of_place(items: list[int]) -> list[int]:
 
 # Swapping two values in a list
 def swap(items: list[int], i: int, j: int) -> None:
+  """ Swap the values in items[i] and items[j]"""
   pass
 
 # Reverse list in place
