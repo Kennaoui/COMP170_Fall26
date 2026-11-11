@@ -27,4 +27,6 @@ def swap(items: list[int], i: int, j: int) -> None:
 
 # Reverse list in place
 def reverse_in_place(items: list[int]) -> None:
-  pass
+  for i in range(0, len(items)//2):
+    swap(items, i, size-1-i)
+
