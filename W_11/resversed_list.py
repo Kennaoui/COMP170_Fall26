@@ -20,7 +20,10 @@ def reversed_copy_V2(items: list[int]) -> list[int]:
 # Swapping two values in a list
 def swap(items: list[int], i: int, j: int) -> None:
   """ Swap the values in items[i] and items[j]"""
-  pass
+  temp = items[i]
+  items[i] = items[j]
+  items[j] = temp
+  # items[i], items[j] = items[j], items[i]
 
 # Reverse list in place
 def reverse_in_place(items: list[int]) -> None:
