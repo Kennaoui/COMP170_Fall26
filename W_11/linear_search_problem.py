@@ -25,7 +25,7 @@ def first_passing_score_for_V3(scores: list[int]) -> int:
     return no_p_score
 
 
-def first_passing_score(scores: list[int]) -> int:
+def first_passing_score_while(scores: list[int]) -> int:
     """Return the index of the first score >= 7, or -1 if absent."""
     first_index = -1
     i = 0
