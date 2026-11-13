@@ -1,4 +1,4 @@
-# COMP 170 – Week 10: While Loops
+# COMP 170 – Assignment 9: While Loops
 
 ## Rules
 
