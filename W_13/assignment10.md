@@ -14,7 +14,7 @@ Write the following functions to manage the playlist.
 
 ---
 
-## Part 1 — Search for a Song
+## Part 1 — Search for a Song (5 pts)
 
 Write `find_song(playlist, song)` that searches for a song and returns its **first index**, or `-1` if the song is not found.
 
@@ -29,7 +29,7 @@ print(find_song(playlist, "Rap"))   # -1
 
 ---
 
-## Part 2 — Remove All Occurrences of a Song
+## Part 2 — Remove All Occurrences of a Song (5 pts)
 
 Write `remove_song(playlist, song)` that removes **all occurrences** of the given song from the original playlist.
 
@@ -48,7 +48,7 @@ print(playlist)
 
 ---
 
-## Part 3 — Working with Tuples
+## Part 3 — Working with Tuples (6 pts)
 
 ### Question 1 — Playlist Summary
 
@@ -100,7 +100,7 @@ print(last)   # Classical
 
 ---
 
-## Part 4 — Counting Songs with Dictionaries
+## Part 4 — Counting Songs with Dictionaries (6 pts)
 
 Write `count_songs(playlist)` that creates and returns a dictionary containing the number of occurrences of each song in the playlist.
 
@@ -148,7 +148,7 @@ Otherwise, add the song to the dictionary with an initial count of `1`.
 
 ---
 
-## Part 5 — Working with Files
+## Part 5 — Working with Files (6 pts)
 
 ### Question 1 — Save Song Counts to a File
 
@@ -178,7 +178,7 @@ ROCK,1
 - Write one song per line.
 - The function should create the file if it does not exist and overwrite its contents if it already exists.
 
-### Question 2 — Load a Playlist from a File
+### Question 2 — Load a Playlist from a File 
 
 Write `load_playlist(filename)` that reads a file in the format described above and **creates and returns a list of song names**.
 
@@ -219,7 +219,7 @@ Should produce:
 
 ---
 
-## Part 6 — Understanding Mutability
+## Part 6 — Understanding Mutability (2 pts)
 
 Consider the following code:
 
