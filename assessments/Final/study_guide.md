@@ -9,7 +9,7 @@ The final pulls together what you practiced in the three quizzes and the ten ass
 1. **Revise the three quizzes.** Redo each question without looking at your answers, then compare. Pay most attention to the questions you missed.
    - Quiz 1 (Weeks 1–6): [practice questions](https://github.com/Kennaoui/COMP170_Fall26/blob/main/assessments/Quiz1/practiceQuestions_weeks_1_to_6.pdf) and [solutions](https://github.com/Kennaoui/COMP170_Fall26/blob/main/assessments/Quiz1/practiceQuestions_weeks_1_to_6_solution.pdf)
    - Quiz 2: [Quiz 2 debrief](https://sakai.luc.edu/access/content/group/COMP_170_002_1995_1266/resources/Quiz2/Quiz2_Debrief.pdf)
-   - Quiz 3 (Weeks 10–12): [Quiz 3 study guide](https://github.com/Kennaoui/COMP170_Fall26/blob/main/assessments/Quiz3/Study_Guide.md)
+   - Quiz 3 (Weeks 10–12): [Quiz 3 study guide](https://github.com/Kennaoui/COMP170_Fall26/blob/main/assessments/Quiz3/Study_Guide.md), Quiz questions and answers will be available after Monday 11/23. 
 2. **Go through all ten assignments.** Reread each assignment, then your own submission and the feedback you got. Ask yourself whether you could rewrite each function on paper, without running it. All assignments are on [Sakai Assignments](https://sakai.luc.edu/portal/site/COMP_170_002_1995_1266/tool/67a204d4-5394-4bcd-9700-e36298324595); the instructions are in the [course GitHub repository](https://github.com/Kennaoui/COMP170_Fall26).
 3. **Work through the topic sections below.** Each one links its slides or notebook. Make sure you can answer every question listed under it.
 4. **Practice by hand.** On the exam you trace code, predict output, spot bugs and write short functions on paper, with no computer.
